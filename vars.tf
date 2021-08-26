@@ -2,8 +2,8 @@ variable "project_id" {
  description = "GCP Project ID for GKE deployment"
 }
 
-variable "count" {
-    default     = 1
+variable "cluster_count" {
+    default = 1
 }
 
 
