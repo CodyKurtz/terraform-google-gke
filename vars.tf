@@ -1,7 +1,11 @@
 variable "project_id" {
-
  description = "GCP Project ID for GKE deployment"
 }
+
+variable "count" {
+    default     = 1
+}
+
 
 variable "location" {
     description = "location to deploy kubernetes cluster into"
