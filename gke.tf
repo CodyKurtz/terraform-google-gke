@@ -1,5 +1,5 @@
 resource "google_container_cluster" "kubernetes_cluster" {
-    name     = "${var.cluster_name}"-"${var.cluster_count}"
+    name     = "${var.cluster_name}-${var.cluster_count}"
     count    = var.cluster_count
     project  = var.project_id
     location = var.location
